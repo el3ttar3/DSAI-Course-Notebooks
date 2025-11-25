@@ -1,40 +1,72 @@
-# 04 Data Mining
+# Data Mining
 
-Data Mining and Pattern Discovery
+> Discovering patterns and insights from large datasets
 
-## Topics Covered
+---
 
-- Word Embeddings
-- Word2Vec
-- GloVe
-- Text Mining
-- Feature Extraction
+## What You'll Learn
+
+| Topic | Description |
+|-------|-------------|
+| **Word Embeddings** | Dense vector representations of words |
+| **Word2Vec** | Skip-gram and CBOW architectures |
+| **GloVe** | Global vectors for word representation |
+| **Text Mining** | Extracting insights from text data |
+| **Sentiment Analysis** | Classifying text by sentiment |
+
+---
 
 ## Notebooks
 
-| Notebook | Original Name |
-|----------|---------------|
-| `DM_Assignment3_Word_Embeddings.ipynb` | Assignment3DM_Abdelrahman-Elattar_202201353_.ipynb |
-| `DM_Assignment4_Advanced_Mining.ipynb` | Assignment4_Abdelrahman-Elattar_202201353_.ipynb |
-| `DM_Project_Text_Retrieval.ipynb` | Project_Data-Mining_Abdelrahman-Elattar_202201353_.ipynb |
-| `DM_IMDB_Sentiment_Analysis.ipynb` | IMDB_Analysis_202201353.ipynb |
+| Notebook | Description |
+|----------|-------------|
+| `DM_Assignment3_Word_Embeddings.ipynb` | Word2Vec, CBOW, Skip-gram, GloVe comparison |
+| `DM_Assignment4_Advanced_Mining.ipynb` | Advanced data mining techniques |
+| `DM_Project_Text_Retrieval.ipynb` | Text retrieval with BERT and MonoT5 |
+| `DM_IMDB_Sentiment_Analysis.ipynb` | Movie review sentiment classification |
 
-## Course Information
+---
 
-- **Student**: Abdelrahman Elattar
-- **ID**: 202201353
-- **Institution**: DSAI Program
+## Quick Start
 
-## Usage
+```python
+from gensim.models import Word2Vec
 
-1. Open notebooks in Google Colab or Jupyter
-2. Ensure required dependencies are installed
-3. Follow cell-by-cell execution
+# Train Word2Vec model
+model = Word2Vec(
+    sentences=corpus,
+    vector_size=100,
+    window=5,
+    min_count=1,
+    sg=1  # Skip-gram
+)
 
-## Technologies
+# Find similar words
+similar = model.wv.most_similar("python")
+```
 
-- Python 3.x
-- TensorFlow / PyTorch
-- Scikit-learn
-- Pandas / NumPy
-- Matplotlib / Seaborn
+---
+
+## Word Embedding Comparison
+
+| Model | Approach | Strengths |
+|-------|----------|-----------|
+| **Word2Vec** | Local context | Fast training, good for small data |
+| **GloVe** | Global statistics | Captures global patterns |
+| **BERT** | Contextual | State-of-the-art, context-aware |
+
+---
+
+## Institution
+
+<p align="center">
+  <a href="https://www.zewailcity.edu.eg/">
+    <strong>Zewail City of Science and Technology</strong>
+  </a>
+  <br/>
+  <em>University of Science and Technology</em>
+</p>
+
+---
+
+**Author**: Abdelrahman Elattar | DSAI Program
