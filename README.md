@@ -9,21 +9,29 @@ A comprehensive collection of **Data Science and Artificial Intelligence** cours
 | Course | Topics | Notebooks |
 |--------|--------|-----------|
 | [Information Retrieval](./01-Information-Retrieval) | PyTerrier, TF-IDF, BERT | 2 |
-| [Deep Learning](./02-Deep-Learning) | CNNs, Autoencoders, Medical Imaging | 3 |
-| [Reinforcement Learning](./03-Reinforcement-Learning) | MDP, Policy Evaluation, Q-Learning | 2 |
-| [Data Mining](./04-Data-Mining) | Word Embeddings, Text Mining | 4 |
-| [Nature-Inspired Computing](./05-Nature-Inspired-Computing) | PSO, Genetic Algorithms, Bat Algorithm | 6 |
+| [Deep Learning](./02-Deep-Learning) | CNNs, Autoencoders, GANs, Deployment | 7 |
+| [Reinforcement Learning](./03-Reinforcement-Learning) | MDP, Policy Evaluation, Gridworld | 3 |
+| [Data Mining](./04-Data-Mining) | Word Embeddings, Text Mining | 5 |
+| [Nature-Inspired Computing](./05-Nature-Inspired-Computing) | PSO, Genetic Algorithms, Bat Algorithm | 7 |
 | [Explainable AI](./06-Explainable-AI) | LIME, SHAP, GradCAM | 3 |
 | [Data Governance](./07-Data-Governance) | Data Quality, Preprocessing | 1 |
-| [NLP and Chatbots](./08-NLP-and-Chatbots) | BERT, Siamese Networks, Chatbots | 5 |
-| [Mathematics](./09-Mathematics-Optimization) | Path Planning, Drone Navigation | 2 |
+| [NLP and Chatbots](./08-NLP-and-Chatbots) | BERT, Siamese Networks, Chatbots | 6 |
+| [Mathematics](./09-Mathematics-Optimization) | Path Planning, Hill Climbing, LP | 5 |
 | [Thesis Research](./10-Thesis-Research) | Learning Analytics, OULAD | 2 |
 | [Machine Learning Labs](./11-Machine-Learning-Labs) | Classification, Regression | 10 |
-| [Prediction](./12-Prediction-Forecasting) | Time Series, Anomaly Detection | 4 |
-| [Projects](./13-Projects) | End-to-End Implementations | 6 |
-| [Lab Exams](./14-Lab-Exams) | Practical Assessments | 7 |
+| [Prediction](./12-Prediction-Forecasting) | Time Series, Anomaly Detection, Stock Analysis | 6 |
+| [Projects](./13-Projects) | End-to-End Implementations | 7 |
+| [Data Visualization](./15-Data-Visualization) | Plotly, Dash, Interactive Charts | 2 |
+| [Web Scraping](./16-Web-Scraping) | BeautifulSoup, Requests | 1 |
+| [Statistics & Probability](./17-Statistics-Probability) | Simulation, Hypothesis Testing | 3 |
+| [Customer Analytics](./18-Customer-Analytics) | Segmentation, RFM Analysis | 1 |
+| [Speech Processing](./19-Speech-Processing) | Librosa, Audio Features | 1 |
+| [Biochemistry & Chemistry](./20-Biochemistry-Chemistry) | Calibration Curves, Stoichiometry | 3 |
+| [Business Process](./21-Business-Process) | Flowcharts, Process Modeling | 1 |
+| [OCR & Document Processing](./22-OCR-Document-Processing) | Tesseract, Arabic OCR | 1 |
+| [Fuzzy Logic](./23-Fuzzy-Logic) | Fuzzy Control Systems | 1 |
 
-**Total: 57 Notebooks across 14 Categories**
+**Total: 78+ Notebooks across 22 Categories**
 
 ---
 
@@ -32,19 +40,27 @@ A comprehensive collection of **Data Science and Artificial Intelligence** cours
 ```
 DSAI-Course-Notebooks/
 ├── 01-Information-Retrieval/       # Text search, PyTerrier, TF-IDF
-├── 02-Deep-Learning/               # CNNs, Autoencoders, Image Classification
-├── 03-Reinforcement-Learning/      # MDP, Policy Evaluation, Q-Learning
+├── 02-Deep-Learning/               # CNNs, Autoencoders, GANs, Deployment
+├── 03-Reinforcement-Learning/      # MDP, Policy Evaluation, Gridworld
 ├── 04-Data-Mining/                 # Word Embeddings, Text Mining
 ├── 05-Nature-Inspired-Computing/   # PSO, Genetic Algorithms, Bat Algorithm
 ├── 06-Explainable-AI/              # LIME, SHAP, GradCAM
 ├── 07-Data-Governance/             # Data Quality, Preprocessing
 ├── 08-NLP-and-Chatbots/            # BERT, Siamese Networks, Chatbots
-├── 09-Mathematics-Optimization/    # Path Planning, Drone Navigation
+├── 09-Mathematics-Optimization/    # Path Planning, Hill Climbing, LP
 ├── 10-Thesis-Research/             # Learning Analytics, OULAD
 ├── 11-Machine-Learning-Labs/       # General ML Assignments
-├── 12-Prediction-Forecasting/      # Time Series, Anomaly Detection
+├── 12-Prediction-Forecasting/      # Time Series, Stock Analysis
 ├── 13-Projects/                    # Course Projects
-└── 14-Lab-Exams/                   # Lab Assessments
+├── 15-Data-Visualization/          # Plotly, Dash Dashboards
+├── 16-Web-Scraping/                # BeautifulSoup, Web Data
+├── 17-Statistics-Probability/      # Statistical Analysis
+├── 18-Customer-Analytics/          # Customer Segmentation
+├── 19-Speech-Processing/           # Audio Analysis
+├── 20-Biochemistry-Chemistry/      # Scientific Computing
+├── 21-Business-Process/            # Process Modeling
+├── 22-OCR-Document-Processing/     # Text Extraction
+└── 23-Fuzzy-Logic/                 # Fuzzy Control Systems
 ```
 
 ---
@@ -59,6 +75,7 @@ DSAI-Course-Notebooks/
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
+  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly"/>
 </p>
 
 ---
