@@ -1,6 +1,6 @@
 # DSAI Course Notebooks
 
-A comprehensive collection of **Data Science and Artificial Intelligence** course notebooks from the DSAI program, organized by subject domain for easy navigation and learning.
+A comprehensive collection of **Data Science and Artificial Intelligence** course notebooks, systematically organized by subject domain for easy navigation and learning.
 
 ---
 
@@ -22,6 +22,8 @@ A comprehensive collection of **Data Science and Artificial Intelligence** cours
 | [Prediction](./12-Prediction-Forecasting) | Time Series, Anomaly Detection | 4 |
 | [Projects](./13-Projects) | End-to-End Implementations | 6 |
 | [Lab Exams](./14-Lab-Exams) | Practical Assessments | 7 |
+
+**Total: 57 Notebooks across 14 Categories**
 
 ---
 
