@@ -1,46 +1,77 @@
-# 11 Machine Learning Labs
+# Machine Learning Labs
 
-General Machine Learning Labs and Assignments
+> Hands-on practice with fundamental machine learning concepts and algorithms
 
-## Topics Covered
+---
 
-- Classification
-- Regression
-- Model Evaluation
-- Scikit-learn
-- Data Analysis
+## What You'll Learn
+
+| Topic | Description |
+|-------|-------------|
+| **Classification** | Predicting categorical outcomes |
+| **Regression** | Predicting continuous values |
+| **Model Evaluation** | Accuracy, precision, recall, F1 |
+| **Cross-Validation** | Robust model assessment |
+| **Feature Selection** | Identifying important variables |
+
+---
 
 ## Notebooks
 
-| Notebook | Original Name |
-|----------|---------------|
-| `ML_Assignment1_Basics.ipynb` | 202201353-Abdelrahman_Elattar-A1.ipynb |
-| `ML_Assignment2_Advanced.ipynb` | 202201353 - Abdelrahman_Elattar-A2.ipynb |
-| `ML_Lab1_Introduction.ipynb` | Abdelrahman_Elattar_202201353_Lab1.ipynb |
-| `ML_General_Practice.ipynb` | Abdelrahman_Elattar_202201353.ipynb |
-| `ML_Lab_Practice.ipynb` | Abdelrahman_Elattar-202201353.ipynb |
-| `ML_Assignment1_Classification.ipynb` | Assignment1.ipynb |
-| `ML_Assignment1c_Variant.ipynb` | Assignment(1c).ipynb |
-| `ML_Lab_Practice_General.ipynb` | Lab_Practice.ipynb |
-| `ML_Lab_Practice_1.ipynb` | Lab_Practice1.ipynb |
-| `ML_Lab_Practice_3.ipynb` | Lab_Practice3.ipynb |
+| Notebook | Description |
+|----------|-------------|
+| `ML_Assignment1_Basics.ipynb` | Introduction to ML fundamentals |
+| `ML_Assignment2_Advanced.ipynb` | Advanced ML techniques |
+| `ML_Lab1_Introduction.ipynb` | Lab 1: Getting started |
+| `ML_General_Practice.ipynb` | General practice exercises |
+| `ML_Lab_Practice.ipynb` | Hands-on lab practice |
+| `ML_Assignment1_Classification.ipynb` | Classification algorithms |
+| `ML_Assignment1c_Variant.ipynb` | Assignment variant |
+| `ML_Lab_Practice_General.ipynb` | General practice session |
+| `ML_Lab_Practice_1.ipynb` | Practice session 1 |
+| `ML_Lab_Practice_3.ipynb` | Practice session 3 |
 
-## Course Information
+---
 
-- **Student**: Abdelrahman Elattar
-- **ID**: 202201353
-- **Institution**: DSAI Program
+## Quick Start
 
-## Usage
+```python
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report
 
-1. Open notebooks in Google Colab or Jupyter
-2. Ensure required dependencies are installed
-3. Follow cell-by-cell execution
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
-## Technologies
+# Train model
+clf = RandomForestClassifier(n_estimators=100)
+clf.fit(X_train, y_train)
 
-- Python 3.x
-- TensorFlow / PyTorch
-- Scikit-learn
-- Pandas / NumPy
-- Matplotlib / Seaborn
+# Evaluate
+y_pred = clf.predict(X_test)
+print(classification_report(y_test, y_pred))
+```
+
+---
+
+## ML Workflow
+
+```
+Data → Preprocessing → Feature Engineering → Model Selection → Training → Evaluation
+```
+
+---
+
+## Institution
+
+<p align="center">
+  <a href="https://www.zewailcity.edu.eg/">
+    <strong>Zewail City of Science and Technology</strong>
+  </a>
+  <br/>
+  <em>University of Science and Technology</em>
+</p>
+
+---
+
+**Author**: Abdelrahman Elattar | DSAI Program
