@@ -1,38 +1,72 @@
-# 03 Reinforcement Learning
+# Reinforcement Learning
 
-Reinforcement Learning and Decision Making
+> Training agents to make optimal decisions through trial and error
 
-## Topics Covered
+---
 
-- Markov Decision Processes
-- Policy Evaluation
-- Value Functions
-- Gridworld
-- Q-Learning
+## What You'll Learn
+
+| Topic | Description |
+|-------|-------------|
+| **Markov Decision Processes** | Mathematical framework for sequential decisions |
+| **Policy Evaluation** | Computing value functions for policies |
+| **Value Iteration** | Finding optimal policies iteratively |
+| **Gridworld** | Classic RL environment for learning |
+| **Reward Shaping** | Understanding reward structure effects |
+
+---
 
 ## Notebooks
 
-| Notebook | Original Name |
-|----------|---------------|
-| `RL_Assignment1_Markov_Chains.ipynb` | Ass1-RL-Abdelrahman_Elattar.ipynb |
-| `RL_Assignment2_Gridworld_MDP.ipynb` | Gridworld_MDP_A2_RL.ipynb |
+| Notebook | Description |
+|----------|-------------|
+| `RL_Assignment1_Markov_Chains.ipynb` | Markov chain simulation and analysis |
+| `RL_Assignment2_Gridworld_MDP.ipynb` | Gridworld MDP with iterative policy evaluation |
 
-## Course Information
+---
 
-- **Student**: Abdelrahman Elattar
-- **ID**: 202201353
-- **Institution**: DSAI Program
+## Quick Start
 
-## Usage
+```python
+import numpy as np
 
-1. Open notebooks in Google Colab or Jupyter
-2. Ensure required dependencies are installed
-3. Follow cell-by-cell execution
+# Define transition matrix
+T = np.array([
+    [0.25, 0.35, 0.40, 0.00],
+    [0.55, 0.00, 0.00, 0.45],
+    [0.00, 0.20, 0.60, 0.20],
+    [0.30, 0.30, 0.20, 0.20]
+])
 
-## Technologies
+# Simulate transitions
+current_state = 0
+for _ in range(100):
+    next_state = np.random.choice(4, p=T[current_state])
+    current_state = next_state
+```
 
-- Python 3.x
-- TensorFlow / PyTorch
-- Scikit-learn
-- Pandas / NumPy
-- Matplotlib / Seaborn
+---
+
+## Key Equations
+
+**Bellman Equation:**
+$$V(s) = \sum_a \pi(a|s) \sum_{s'} P(s'|s,a)[R(s,a,s') + \gamma V(s')]$$
+
+**Value Function Update:**
+$$V_{k+1}(s) = \max_a \sum_{s'} P(s'|s,a)[R + \gamma V_k(s')]$$
+
+---
+
+## Institution
+
+<p align="center">
+  <a href="https://www.zewailcity.edu.eg/">
+    <strong>Zewail City of Science and Technology</strong>
+  </a>
+  <br/>
+  <em>University of Science and Technology</em>
+</p>
+
+---
+
+**Author**: Abdelrahman Elattar | DSAI Program
