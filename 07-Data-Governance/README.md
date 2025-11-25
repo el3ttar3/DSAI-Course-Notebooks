@@ -1,37 +1,73 @@
-# 07 Data Governance
+# Data Governance
 
-Data Governance and Quality Management
+> Ensuring data quality, consistency, and integrity throughout the data lifecycle
 
-## Topics Covered
+---
 
-- Data Cleaning
-- Missing Values
-- Data Encoding
-- Normalization
-- Data Quality
+## What You'll Learn
+
+| Topic | Description |
+|-------|-------------|
+| **Data Cleaning** | Handling missing, incorrect, and duplicate data |
+| **Missing Values** | Imputation strategies and best practices |
+| **Data Encoding** | Converting categorical to numerical data |
+| **Normalization** | Scaling features for ML models |
+| **Data Quality** | Validation and quality assurance |
+
+---
 
 ## Notebooks
 
-| Notebook | Original Name |
-|----------|---------------|
-| `DG_Lab5_Data_Cleaning_Preprocessing.ipynb` | Data_Governance_lab-Pra5.ipynb |
+| Notebook | Description |
+|----------|-------------|
+| `DG_Lab5_Data_Cleaning_Preprocessing.ipynb` | Comprehensive data cleaning pipeline |
 
-## Course Information
+---
 
-- **Student**: Abdelrahman Elattar
-- **ID**: 202201353
-- **Institution**: DSAI Program
+## Quick Start
 
-## Usage
+```python
+import pandas as pd
+from sklearn.preprocessing import StandardScaler, LabelEncoder
 
-1. Open notebooks in Google Colab or Jupyter
-2. Ensure required dependencies are installed
-3. Follow cell-by-cell execution
+# Handle missing values
+df['column'].fillna(df['column'].mean(), inplace=True)
 
-## Technologies
+# Remove duplicates
+df.drop_duplicates(inplace=True)
 
-- Python 3.x
-- TensorFlow / PyTorch
-- Scikit-learn
-- Pandas / NumPy
-- Matplotlib / Seaborn
+# Encode categorical variables
+le = LabelEncoder()
+df['category'] = le.fit_transform(df['category'])
+
+# Normalize numerical features
+scaler = StandardScaler()
+df[['feature1', 'feature2']] = scaler.fit_transform(df[['feature1', 'feature2']])
+```
+
+---
+
+## Data Quality Checklist
+
+- [ ] Check for missing values
+- [ ] Identify and handle duplicates
+- [ ] Validate data types
+- [ ] Check for outliers
+- [ ] Ensure consistent formatting
+- [ ] Verify data ranges
+
+---
+
+## Institution
+
+<p align="center">
+  <a href="https://www.zewailcity.edu.eg/">
+    <strong>Zewail City of Science and Technology</strong>
+  </a>
+  <br/>
+  <em>University of Science and Technology</em>
+</p>
+
+---
+
+**Author**: Abdelrahman Elattar | DSAI Program
