@@ -1,40 +1,72 @@
-# 12 Prediction Forecasting
+# Prediction and Forecasting
 
-Prediction and Time Series Analysis
+> Building models to predict future values and detect anomalies in time series data
 
-## Topics Covered
+---
 
-- Time Series
-- Anomaly Detection
-- Forecasting
-- Regression
-- Feature Engineering
+## What You'll Learn
+
+| Topic | Description |
+|-------|-------------|
+| **Time Series** | Analyzing sequential data patterns |
+| **Forecasting** | Predicting future values |
+| **Anomaly Detection** | Identifying unusual patterns |
+| **Regression Models** | Continuous value prediction |
+| **Feature Engineering** | Creating time-based features |
+
+---
 
 ## Notebooks
 
-| Notebook | Original Name |
-|----------|---------------|
-| `PRED_Water_Tank_Prediction.ipynb` | water_tank_prediction.ipynb |
-| `PRED_Water_Tank_Prediction_V2.ipynb` | water_tank_prediction2.ipynb |
-| `PRED_Water_Tank_Final.ipynb` | water_tank_prediction_final.ipynb |
-| `PRED_Anomaly_Detection.ipynb` | Prediction_and_Anomaly_Detection.ipynb |
+| Notebook | Description |
+|----------|-------------|
+| `PRED_Water_Tank_Prediction.ipynb` | Water level prediction model |
+| `PRED_Water_Tank_Prediction_V2.ipynb` | Improved prediction pipeline |
+| `PRED_Water_Tank_Final.ipynb` | Final optimized model |
+| `PRED_Anomaly_Detection.ipynb` | Anomaly detection techniques |
 
-## Course Information
+---
 
-- **Student**: Abdelrahman Elattar
-- **ID**: 202201353
-- **Institution**: DSAI Program
+## Quick Start
 
-## Usage
+```python
+import pandas as pd
+from sklearn.ensemble import IsolationForest
 
-1. Open notebooks in Google Colab or Jupyter
-2. Ensure required dependencies are installed
-3. Follow cell-by-cell execution
+# Load time series data
+df = pd.read_csv('sensor_data.csv', parse_dates=['timestamp'])
 
-## Technologies
+# Create time features
+df['hour'] = df['timestamp'].dt.hour
+df['day_of_week'] = df['timestamp'].dt.dayofweek
 
-- Python 3.x
-- TensorFlow / PyTorch
-- Scikit-learn
-- Pandas / NumPy
-- Matplotlib / Seaborn
+# Anomaly detection
+clf = IsolationForest(contamination=0.1)
+df['anomaly'] = clf.fit_predict(df[['value']])
+```
+
+---
+
+## Project: Water Tank Prediction
+
+This project predicts water tank levels using:
+- Historical sensor data
+- Time-based features
+- Machine learning regression
+- Real-time anomaly detection
+
+---
+
+## Institution
+
+<p align="center">
+  <a href="https://www.zewailcity.edu.eg/">
+    <strong>Zewail City of Science and Technology</strong>
+  </a>
+  <br/>
+  <em>University of Science and Technology</em>
+</p>
+
+---
+
+**Author**: Abdelrahman Elattar | DSAI Program
