@@ -1,38 +1,66 @@
-# 01 Information Retrieval
+# Information Retrieval
 
-Information Retrieval and Text Search Systems
+> Building intelligent search systems that understand and retrieve relevant information
 
-## Topics Covered
+---
 
-- PyTerrier
-- TF-IDF
-- Document Indexing
-- Text Preprocessing
-- Search Engines
+## What You'll Learn
+
+| Topic | Description |
+|-------|-------------|
+| **PyTerrier** | Python framework for information retrieval experiments |
+| **TF-IDF** | Term frequency-inverse document frequency ranking |
+| **Document Indexing** | Creating searchable document collections |
+| **Text Preprocessing** | Tokenization, stemming, stopword removal |
+| **BERT Ranking** | Neural ranking with transformer models |
+
+---
 
 ## Notebooks
 
-| Notebook | Original Name |
-|----------|---------------|
-| `IR_Lab3_PyTerrier_Text_Indexing.ipynb` | 202201353 - Abdelrahman_Elattar - IR-Week(3) -Lab(3).ipynb |
-| `IR_BERT_CV_Ranking_System.ipynb` | Abdulrahman Mohammed 202201353 - A5_BERT_CV_Ranking.ipynb |
+| Notebook | Description |
+|----------|-------------|
+| `IR_Lab3_PyTerrier_Text_Indexing.ipynb` | Document indexing and retrieval with PyTerrier |
+| `IR_BERT_CV_Ranking_System.ipynb` | CV/Resume ranking using BERT embeddings |
 
-## Course Information
+---
 
-- **Student**: Abdelrahman Elattar
-- **ID**: 202201353
-- **Institution**: DSAI Program
+## Quick Start
 
-## Usage
+```python
+# Install PyTerrier
+!pip install python-terrier
 
-1. Open notebooks in Google Colab or Jupyter
-2. Ensure required dependencies are installed
-3. Follow cell-by-cell execution
+# Initialize
+import pyterrier as pt
+pt.init()
 
-## Technologies
+# Index documents
+indexer = pt.DFIndexer("./myIndex")
+index_ref = indexer.index(docs_df['text'], docs_df['docno'])
+```
 
-- Python 3.x
-- TensorFlow / PyTorch
-- Scikit-learn
-- Pandas / NumPy
-- Matplotlib / Seaborn
+---
+
+## Key Concepts
+
+- **Inverted Index**: Maps terms to documents containing them
+- **BM25**: Probabilistic ranking function
+- **Query Processing**: Transforming user queries for retrieval
+- **Relevance Scoring**: Calculating document-query similarity
+
+---
+
+## Institution
+
+<p align="center">
+  <a href="https://www.zewailcity.edu.eg/">
+    <strong>Zewail City of Science and Technology</strong>
+  </a>
+  <br/>
+  <em>University of Science and Technology</em>
+</p>
+
+---
+
+**Author**: Abdelrahman Elattar | DSAI Program
