@@ -1,41 +1,84 @@
-# 08 Nlp And Chatbots
+# NLP and Chatbots
 
-Natural Language Processing and Conversational AI
+> Building intelligent conversational systems that understand and generate human language
 
-## Topics Covered
+---
 
-- BERT
-- Siamese Networks
-- Chatbots
-- Text Classification
-- Semantic Similarity
+## What You'll Learn
+
+| Topic | Description |
+|-------|-------------|
+| **BERT** | Bidirectional Encoder Representations |
+| **Siamese Networks** | Similarity learning for Q&A matching |
+| **Chatbots** | Conversational AI systems |
+| **Semantic Similarity** | Measuring text relatedness |
+| **Arabic NLP** | Processing Arabic language text |
+
+---
 
 ## Notebooks
 
-| Notebook | Original Name |
-|----------|---------------|
-| `NLP_Chatbot_Siamese_Network.ipynb` | Chatbot-Siame-model.ipynb |
-| `NLP_Chatbot_Zewail_City_QA.ipynb` | Chatbot-ZC.ipynb |
-| `NLP_YouTube_Video_Analysis.ipynb` | YouTube_Video_NLP.ipynb |
-| `NLP_Arabic_Grading_System.ipynb` | arabic_grading_system.ipynb |
-| `NLP_Arabic_Grading_System_V2.ipynb` | arabic_grading_system(1).ipynb |
+| Notebook | Description |
+|----------|-------------|
+| `NLP_Chatbot_Siamese_Network.ipynb` | Q&A chatbot using Siamese networks |
+| `NLP_Chatbot_Zewail_City_QA.ipynb` | University FAQ chatbot system |
+| `NLP_YouTube_Video_Analysis.ipynb` | Video transcript NLP pipeline |
+| `NLP_Arabic_Grading_System.ipynb` | Arabic text grading with NLP |
+| `NLP_Arabic_Grading_System_V2.ipynb` | Enhanced Arabic grading system |
 
-## Course Information
+---
 
-- **Student**: Abdelrahman Elattar
-- **ID**: 202201353
-- **Institution**: DSAI Program
+## Quick Start
 
-## Usage
+```python
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
 
-1. Open notebooks in Google Colab or Jupyter
-2. Ensure required dependencies are installed
-3. Follow cell-by-cell execution
+# Load pre-trained model
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
-## Technologies
+# Encode sentences
+embeddings = model.encode([
+    "What is machine learning?",
+    "How does ML work?"
+])
 
-- Python 3.x
-- TensorFlow / PyTorch
-- Scikit-learn
-- Pandas / NumPy
-- Matplotlib / Seaborn
+# Calculate similarity
+similarity = cosine_similarity([embeddings[0]], [embeddings[1]])
+```
+
+---
+
+## Chatbot Architecture
+
+```
+User Query → Preprocessing → Embedding → Similarity Matching → Response
+                                              ↓
+                                    Knowledge Base
+```
+
+---
+
+## Featured Project: Zewail City Q&A Bot
+
+A chatbot that answers questions about:
+- Admission requirements
+- Available programs
+- Tuition fees
+- Campus facilities
+
+---
+
+## Institution
+
+<p align="center">
+  <a href="https://www.zewailcity.edu.eg/">
+    <strong>Zewail City of Science and Technology</strong>
+  </a>
+  <br/>
+  <em>University of Science and Technology</em>
+</p>
+
+---
+
+**Author**: Abdelrahman Elattar | DSAI Program
