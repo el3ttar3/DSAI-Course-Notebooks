@@ -1,39 +1,79 @@
-# 06 Explainable Ai
+# Explainable AI
 
-Explainable AI and Model Interpretability
+> Making machine learning models transparent and interpretable
 
-## Topics Covered
+---
 
-- LIME
-- SHAP
-- GradCAM
-- Feature Importance
-- Model Transparency
+## What You'll Learn
+
+| Topic | Description |
+|-------|-------------|
+| **LIME** | Local Interpretable Model-agnostic Explanations |
+| **SHAP** | SHapley Additive exPlanations |
+| **GradCAM** | Gradient-weighted Class Activation Mapping |
+| **Feature Importance** | Understanding model decisions |
+| **Model Transparency** | Building trustworthy AI systems |
+
+---
 
 ## Notebooks
 
-| Notebook | Original Name |
-|----------|---------------|
-| `XAI_LabExam1_Interpretability.ipynb` | LabExam1_XAI.ipynb |
-| `XAI_Exploratory_Data_Analysis.ipynb` | XAI-EDA(1).ipynb |
-| `XAI_LabExam2_Model_B.ipynb` | LabExam2_Model_B__Abdelrahman Elattar_202201353__.ipynb |
+| Notebook | Description |
+|----------|-------------|
+| `XAI_LabExam1_Interpretability.ipynb` | Model interpretability techniques |
+| `XAI_Exploratory_Data_Analysis.ipynb` | EDA with explainability focus |
+| `XAI_LabExam2_Model_B.ipynb` | Advanced XAI implementations |
 
-## Course Information
+---
 
-- **Student**: Abdelrahman Elattar
-- **ID**: 202201353
-- **Institution**: DSAI Program
+## Quick Start
 
-## Usage
+```python
+import shap
+import lime
+from lime import lime_image
 
-1. Open notebooks in Google Colab or Jupyter
-2. Ensure required dependencies are installed
-3. Follow cell-by-cell execution
+# SHAP explanation
+explainer = shap.GradientExplainer(model, background_data)
+shap_values = explainer.shap_values(test_data)
+shap.image_plot(shap_values, test_images)
 
-## Technologies
+# LIME explanation
+explainer = lime_image.LimeImageExplainer()
+explanation = explainer.explain_instance(image, predict_fn, top_labels=2)
+```
 
-- Python 3.x
-- TensorFlow / PyTorch
-- Scikit-learn
-- Pandas / NumPy
-- Matplotlib / Seaborn
+---
+
+## XAI Methods Comparison
+
+| Method | Type | Best For |
+|--------|------|----------|
+| **LIME** | Local | Single prediction explanation |
+| **SHAP** | Both | Feature importance ranking |
+| **GradCAM** | Visual | CNN image explanations |
+
+---
+
+## Why Explainable AI Matters
+
+- **Trust**: Users can understand and trust model decisions
+- **Debugging**: Identify model biases and errors
+- **Compliance**: Meet regulatory requirements (GDPR, etc.)
+- **Improvement**: Guide model refinement
+
+---
+
+## Institution
+
+<p align="center">
+  <a href="https://www.zewailcity.edu.eg/">
+    <strong>Zewail City of Science and Technology</strong>
+  </a>
+  <br/>
+  <em>University of Science and Technology</em>
+</p>
+
+---
+
+**Author**: Abdelrahman Elattar | DSAI Program
