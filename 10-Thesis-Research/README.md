@@ -1,38 +1,65 @@
-# 10 Thesis Research
+# Thesis Research
 
-Thesis Research - Learning Analytics
+> Learning Analytics - Predicting Student Success Using Educational Data
 
-## Topics Covered
+---
 
-- OULAD Dataset
-- Student Performance
-- Educational Data Mining
-- Predictive Analytics
-- Feature Engineering
+## Research Focus
+
+This thesis explores how machine learning can predict student outcomes using the **Open University Learning Analytics Dataset (OULAD)**, one of the largest publicly available educational datasets.
+
+---
+
+## What You'll Learn
+
+| Topic | Description |
+|-------|-------------|
+| **OULAD Dataset** | 32,000+ students, 7 courses, VLE interactions |
+| **Student Performance** | Predicting pass/fail outcomes |
+| **Educational Data Mining** | Extracting insights from learning data |
+| **Feature Engineering** | Creating predictive features from raw data |
+| **Explainable AI** | Understanding what drives predictions |
+
+---
 
 ## Notebooks
 
-| Notebook | Original Name |
-|----------|---------------|
-| `THESIS_OULAD_Learning_Analytics.ipynb` | thesis_pipeline_oulad.ipynb |
-| `THESIS_Pipeline_with_EDA.ipynb` | thesis_pipeline_with_eda.ipynb |
+| Notebook | Description |
+|----------|-------------|
+| `THESIS_OULAD_Learning_Analytics.ipynb` | Complete thesis pipeline with OULAD |
+| `THESIS_Pipeline_with_EDA.ipynb` | Exploratory data analysis and modeling |
 
-## Course Information
+---
 
-- **Student**: Abdelrahman Elattar
-- **ID**: 202201353
-- **Institution**: DSAI Program
+## Research Pipeline
 
-## Usage
+```
+Data Import → EDA → Feature Engineering → Model Training → XAI → Results
+     ↓           ↓           ↓                ↓            ↓
+  7 tables   Visualize   Aggregation    RF, XGBoost    SHAP
+```
 
-1. Open notebooks in Google Colab or Jupyter
-2. Ensure required dependencies are installed
-3. Follow cell-by-cell execution
+---
 
-## Technologies
+## Key Features Analyzed
 
-- Python 3.x
-- TensorFlow / PyTorch
-- Scikit-learn
-- Pandas / NumPy
-- Matplotlib / Seaborn
+- **Demographics**: Age, gender, region, education level
+- **VLE Activity**: Clicks, resources accessed, time spent
+- **Assessment**: Quiz scores, assignment submissions
+- **Temporal**: Weekly engagement patterns
+
+---
+
+## Institution
+
+<p align="center">
+  <a href="https://www.zewailcity.edu.eg/">
+    <strong>Zewail City of Science and Technology</strong>
+  </a>
+  <br/>
+  <em>University of Science and Technology</em>
+</p>
+
+---
+
+**Author**: Abdelrahman Elattar | DSAI Program
