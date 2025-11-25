@@ -1,41 +1,59 @@
-# 14 Lab Exams
+# Lab Exams
 
-Lab Examinations and Assessments
+> Practical assessments testing hands-on skills in data science and AI
 
-## Topics Covered
+---
 
-- Practical Exams
-- Lab Assessments
-- Timed Exercises
+## Overview
+
+This collection contains lab examinations and quizzes that assess practical implementation skills across various DSAI topics.
+
+---
 
 ## Notebooks
 
-| Notebook | Original Name |
-|----------|---------------|
-| `EXAM_Lab_V3.ipynb` | Lab_Exam_V3_StudentVersion.ipynb |
-| `EXAM_Lab_1.ipynb` | Lab_Exam(1).ipynb |
-| `EXAM_Model_A.ipynb` | LabExamModel_A_1_Abdelrahman-Elattar_202201353.ipynb |
-| `EXAM_Model_B_Template.ipynb` | LabExam2_Model_B__StudentName_StudentID__.ipynb |
-| `EXAM_Lab_V3_Copy.ipynb` | Copy of Lab_Exam_version_3.ipynb |
-| `EXAM_Model_C_V2.ipynb` | Copy of LabExam1_Model_C_v2.ipynb |
-| `EXAM_DSAI402_Quiz1.ipynb` | yourNAME,_yourID,_DSAI_402_Lab_Quiz_1_A_Notebook.ipynb |
+| Notebook | Description |
+|----------|-------------|
+| `EXAM_Lab_V3.ipynb` | Lab exam version 3 |
+| `EXAM_Lab_1.ipynb` | Lab exam 1 |
+| `EXAM_Model_A.ipynb` | Exam model A |
+| `EXAM_Model_B_Template.ipynb` | Exam model B template |
+| `EXAM_Lab_V3_Copy.ipynb` | Lab exam backup |
+| `EXAM_Model_C_V2.ipynb` | Exam model C version 2 |
+| `EXAM_DSAI402_Quiz1.ipynb` | DSAI 402 quiz 1 |
 
-## Course Information
+---
 
-- **Student**: Abdelrahman Elattar
-- **ID**: 202201353
-- **Institution**: DSAI Program
+## Exam Topics Covered
 
-## Usage
+| Course | Topics |
+|--------|--------|
+| **DSAI 305** | Deep Learning, CNNs, XAI |
+| **DSAI 353** | Machine Learning fundamentals |
+| **DSAI 402** | Advanced AI concepts |
 
-1. Open notebooks in Google Colab or Jupyter
-2. Ensure required dependencies are installed
-3. Follow cell-by-cell execution
+---
 
-## Technologies
+## Tips for Success
 
-- Python 3.x
-- TensorFlow / PyTorch
-- Scikit-learn
-- Pandas / NumPy
-- Matplotlib / Seaborn
+1. **Read carefully** - Understand requirements before coding
+2. **Plan first** - Outline your approach
+3. **Test incrementally** - Run cells as you complete them
+4. **Comment code** - Explain your logic
+5. **Manage time** - Allocate time for each section
+
+---
+
+## Institution
+
+<p align="center">
+  <a href="https://www.zewailcity.edu.eg/">
+    <strong>Zewail City of Science and Technology</strong>
+  </a>
+  <br/>
+  <em>University of Science and Technology</em>
+</p>
+
+---
+
+**Author**: Abdelrahman Elattar | DSAI Program
